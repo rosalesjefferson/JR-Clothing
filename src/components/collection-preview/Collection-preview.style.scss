@@ -1,0 +1,12 @@
+.collection-preview{
+	display: grid;
+	.header-3{
+		justify-self: start;
+	}
+
+	&__items-container{
+		display: grid;
+	  	grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+	  	grid-gap: 2rem;
+	}
+}

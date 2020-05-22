@@ -1,0 +1,68 @@
+@import '../../scss/main.scss';
+.footer{
+	background: $dark-7;
+	color: $light-3;
+	padding: 4rem 3rem;
+	&__nav{
+
+	}
+	.container{
+		display: grid;
+		grid-row-gap: 2rem;
+	}
+
+	&__logo-container{
+		width: 10rem;
+		justify-self: center;
+		background: transparent;
+		@media only screen and(max-width: 50em){
+			width: 8rem;
+		}
+
+		@media only screen and(max-width: 37.5em){
+			width: 6rem;
+		}
+	}
+
+	&__logo{
+		width: 100%;
+		opacity: .8;
+		transition: opacity .5s;
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+	&__nav-lists{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		text-align: center;
+	}
+
+	&__nav-item{
+		list-style: none;
+		transition: all .5s;
+		padding: 1rem 0;
+		border: 1px solid transparent;
+		cursor: pointer;
+		&:hover{
+			transform: translateY(-.5rem);
+			border-color: $light-3;
+			box-shadow: $boxShadowLight;
+		}
+	}
+
+	&__nav-link{
+		color: currentColor;
+		font-size: 1.7rem;
+		@media only screen and(max-width: 37.5em){
+			font-size: 1.4rem;
+		}
+	}
+
+	&__copyright{
+		font-size: 1.6rem;
+		justify-self: center;
+		color: $primary;
+	}
+}

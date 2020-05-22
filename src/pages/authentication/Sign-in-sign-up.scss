@@ -1,0 +1,27 @@
+.sign-in-and-sign-up {
+  padding: 0 3rem;
+  .header-4{
+  	text-align: center;
+  	font-size: 2.5rem;
+  	margin-top: 8rem;
+  	 @media only screen and(max-width: 37.5em){
+	  	margin-top: 4rem;
+	 }
+  }
+  .padding-container{
+	  max-width: 850px;
+	  display: grid;
+	  grid-template-columns: repeat(2, 380px);
+	  justify-content: space-between;
+	  grid-gap: 5rem;
+	  margin: 4rem auto 8rem auto;
+	  @media only screen and(max-width: 900px){
+		  grid-template-columns: 1fr;
+		  max-width: 500px;
+	  }
+	  @media only screen and(max-width: 37.5em){
+		  margin: 2rem auto 4rem auto;
+	  }
+  }
+}
+ 

@@ -1,4 +1,59 @@
-.App {
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Open Sans Condensed';
+  font-weight: 300;
+  line-height: 1.6; 
+  position: relative;
+}
+
+a:link,
+a:visited{
+  text-decoration: none;
+}
+.container{
+  max-width: 114rem;
+  margin: 0 auto;
+}
+::selection {
+    background: pink;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans Condensed';
+  padding: 20px 60px;
+}
+
+a:link,
+a:visited{
+  text-decoration: none;
+}*/
+/*.App {
   text-align: center;
 }
 
@@ -36,3 +91,4 @@
     transform: rotate(360deg);
   }
 }
+*/

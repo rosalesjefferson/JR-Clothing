@@ -1,0 +1,26 @@
+@import '../../scss/_variables.scss';
+
+.cart__icon-container{
+  position: relative;
+  width: 4rem;
+  border-radius: 5px;
+}
+.cart__icon,
+.cart__item-count{
+  cursor: pointer;
+}
+.cart__item-count{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $light-3;
+  font-weight: 600;
+  font-size: 1.6rem;
+  &.change-text{
+    color: $dark-5;
+  }
+}
+
+
+

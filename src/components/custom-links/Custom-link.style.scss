@@ -1,0 +1,40 @@
+@import '../../scss/main';
+.btn{
+	&:link,
+	&:visited{
+		font-size: 2rem;
+		font-weight: 600;
+		padding: 1rem 3rem;
+		transition: all .5s;
+		@media only screen and(max-width: 50em){
+			font-size: 1.8rem
+		}
+		@media only screen and(max-width: 37.5em){
+			padding: .5rem 2rem;
+			font-size: 1.5rem
+		}
+		@media only screen and(max-width: 21.87em){
+			padding: .3rem 1.5rem;
+		}
+	}
+	&:active{
+		transform: translateY(0)!important;
+		&.red-hover{
+			box-shadow: 0 0 10px rgba($primary, .5)!important;
+		}
+	}
+	&:hover{
+		transform: translateY(-5px);
+		&.red-hover{
+			background: $primary;
+			box-shadow: $boxShadowCrimson;
+			border-color: $primary;
+		}
+	}
+
+	&.light-background{
+		border-radius: 20rem;
+		color: $light-3;
+		border: 1px solid $light-3;
+	}
+}

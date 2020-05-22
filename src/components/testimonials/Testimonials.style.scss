@@ -1,0 +1,6 @@
+.testimonials__container{
+	display: grid;
+	grid-template-rows: max-content;
+	grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+	grid-gap: 2rem;
+}

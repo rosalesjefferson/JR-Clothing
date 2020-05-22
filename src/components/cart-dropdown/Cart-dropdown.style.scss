@@ -1,0 +1,78 @@
+@import '../../scss/main.scss';
+
+.cart-dropdown{
+	@include position(absolute, unset, 0, -37rem, unset);
+	color: $dark;
+	padding: 2rem;
+	border: 1px solid $dark;
+	background: $light;
+	height: 35rem;
+	width: 30rem;
+	overflow: hidden;
+	.header-4{
+		text-align: center;
+	}
+	button{
+		width: 100%;
+	}
+
+	@media only screen and(max-width: 50em){
+		@include position(fixed, unset, 3rem, 9rem, unset);
+		width: 25rem;
+		height: 25rem;
+	}
+	@media only screen and(max-width: 25em){
+		width: 19rem;
+		padding: 1rem;
+		bottom: 12rem;
+	}
+}
+
+.cart{
+	&__items-container{
+		height: 60%;
+		width: 100%;
+		margin: 2rem 0;
+		overflow-y: auto;
+		border-radius: 5px;
+		&::-webkit-scrollbar{
+            width: 1.5rem;
+        }
+        &::-webkit-scrollbar-track{
+            background: $light-7;
+            border-radius: 1rem;
+        }
+        &::-webkit-scrollbar-thumb{
+            background: $gray-3;
+            border-radius: 1rem;
+        }
+        &::-webkit-scrollbar-thumb:hover{
+            background: $dark-10;
+        }
+  
+  		@media only screen and(max-width: 50em){
+			height: 44%;
+		}
+	}
+
+	&__empty-message{
+		font-size: 1.8rem;
+		text-align: center;
+		margin-top: 5rem;
+		color: $dark;
+	}
+	&__close{
+		@include position(absolute, 0, 2rem, unset, unset);
+		font-size: 4rem;
+		display: inline-block;
+		text-align: top;
+		cursor: pointer;
+		transition: color .5s;
+		&:hover{
+			color: $primary;
+		}
+		&:active{
+			transform: scale(.8);
+		}
+	}
+}

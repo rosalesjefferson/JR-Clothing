@@ -1,0 +1,29 @@
+@import '../../scss/main.scss';
+
+.collection-page{
+  padding-top: 8rem;
+  @media only screen and(max-width: 49.25em){
+    padding-top: 4rem;
+  }
+  &__padding{
+    padding: 0 3rem;
+  }
+  .container{
+  	display: grid;
+  }
+  
+  .header-3{
+  	justify-self: center;
+  }
+  &__items-container{
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  	grid-gap: 2rem;
+  }
+  .footer{
+    margin-top: 8rem;
+    @media only screen and(max-width: 49.25em){
+      margin-top: 4rem;
+    }
+  }
+}
